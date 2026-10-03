@@ -1,11 +1,9 @@
 import { test, expect } from '@playwright/test';
+import { login } from './helpers';
 
 test('User cannot login with wrong password', async ({ page }) => {
-  await page.goto('https://www.saucedemo.com');
 
-  await page.locator('[data-test="username"]').fill('standard_user');
-  await page.locator('[data-test="password"]').fill('wrong_password');
-  await page.locator('[data-test="login-button"]').click();
+  await login(page, 'standard_user', 'wrong_password');
 
   await expect(page.locator('[data-test="error"]')).toBeVisible();
-  });
+});
