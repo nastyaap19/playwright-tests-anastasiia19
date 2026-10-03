@@ -23,6 +23,7 @@ This repository is a personal automation portfolio project, built while learning
 | `lockedoutuser.spec.ts` | A locked-out user is blocked from logging in |
 | `usercanadditem.spec.ts` | User can add a product to the cart |
 | `usercanaddtocart.spec.ts` | User can complete the add-to-cart flow |
+| `logout.spec.ts` | User can log out and returns to the login page |
 
 ## How to Run
 
@@ -69,6 +70,7 @@ Test results are visible under the repository's **Actions** tab — a green chec
 ```
 .github/workflows/   # CI pipeline (GitHub Actions)
 tests/               # All test specs
+tests/helpers.ts     # Shared helper functions (e.g. login)
 playwright.config.ts # Playwright configuration
 package.json         # Project dependencies
 ```
