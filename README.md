@@ -25,6 +25,8 @@ This repository is a personal automation portfolio project, built while learning
 | `usercanaddtocart.spec.ts` | User can complete the add-to-cart flow |
 | `logout.spec.ts` | User can log out and returns to the login page |
 | `usercancheckoutclaude.spec.ts` | User can complete checkout with one item |
+| `removeitemfromcart.spec.ts` | User can remove an item from the cart |
+| `checkoutemptyfields.spec.ts` | User cannot continue checkout with empty fields |
 
 ## How to Run
 
