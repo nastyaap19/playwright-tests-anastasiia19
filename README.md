@@ -1,3 +1,5 @@
+![Playwright Tests](https://github.com/nastyaap19/playwright-tests-anastasiia19/actions/workflows/playwright.yml/badge.svg)
+
 # Playwright Test Automation Portfolio
 
 Automated end-to-end tests for [SauceDemo](https://www.saucedemo.com), built with [Playwright](https://playwright.dev/) and TypeScript, with CI via GitHub Actions.
