@@ -27,6 +27,7 @@ This repository is a personal automation portfolio project, built while learning
 | `usercancheckoutclaude.spec.ts` | User can complete checkout with one item |
 | `removeitemfromcart.spec.ts` | User can remove an item from the cart |
 | `checkoutemptyfields.spec.ts` | User cannot continue checkout with empty fields |
+| `sortproducts.spec.ts` | Products can be sorted by name (A-Z, Z-A) and price (low-high, high-low) |
 
 ## How to Run
 
