@@ -9,8 +9,7 @@ test('User can complete checkout with one item', async ({ page }) => {
     await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
     await page.locator('[data-test="shopping-cart-link"]').click();
     await expect(page).toHaveURL('https://www.saucedemo.com/cart.html');
-    await expect(page.locator('.cart_list').locator('[data-test="inventory-item"]')).toContainText('Sauce Labs Backpack');
-
+    await expect(page.locator('[data-test="cart-list"]').locator('[data-test="inventory-item"]')).toContainText('Sauce Labs Backpack');
     // Step 1: customer information
     await page.locator('[data-test="checkout"]').click();
     await expect(page).toHaveURL('https://www.saucedemo.com/checkout-step-one.html');
@@ -21,7 +20,7 @@ test('User can complete checkout with one item', async ({ page }) => {
 
     // Step 2: verify order contents and totals
     await expect(page).toHaveURL('https://www.saucedemo.com/checkout-step-two.html');
-    await expect(page.locator('.cart_list').locator('[data-test="inventory-item"]')).toContainText('Sauce Labs Backpack');
+    await expect(page.locator('[data-test="cart-list"]').locator('[data-test="inventory-item"]')).toContainText('Sauce Labs Backpack');
     await expect(page.locator('[data-test="subtotal-label"]')).toContainText('29.99');
     await expect(page.locator('[data-test="total-label"]')).toContainText('32.39');
 
